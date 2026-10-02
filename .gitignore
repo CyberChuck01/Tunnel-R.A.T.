@@ -1,0 +1,7 @@
+*.log
+captures/
+logs/
+.env
+*.pcap
+bettercap-src/
+config/tunnel-rat.conf.local

